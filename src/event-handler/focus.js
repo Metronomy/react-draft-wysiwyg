@@ -12,7 +12,7 @@ export default class FocusHandler {
 
   isEditorBlur = (event): void => {
     if (
-      (event.target.tagName === 'INPUT' || event.target.tagName === 'LABEL' || event.target.tagName === 'TEXTAREA') &&
+      (event.target.tagName === 'INPUT' || event.target.tagName === 'LABEL' || event.target.tagName === 'TEXTAREA' || event.target.className === 'DraftEditor-root') &&
       !this.editorFocused
     ) {
       this.inputFocused = false;
