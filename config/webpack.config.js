@@ -4,6 +4,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const precss = require('precss');
 
+//test
+
 module.exports = {
   devtool: 'source-map',
   entry: [
