@@ -450,7 +450,8 @@ export default class WysiwygEditor extends Component {
   };
 
   preventDefault: Function = (event: Object) => {
-    if (event.target.tagName === "INPUT" || event.target.tagName === "LABEL" || event.target.tagName === "TEXTAREA" || event.target.className === "DraftEditor-root") {
+    console.log(event.target.className);
+    if (event.target.tagName === "INPUT" || event.target.tagName === "LABEL" || event.target.tagName === "TEXTAREA" || event.target.className === "public-DraftStyleDefault-block public-DraftStyleDefault-ltr") {
       this.focusHandler.onInputMouseDown();
     } else {
       event.preventDefault();
