@@ -12,13 +12,13 @@ export default class FocusHandler {
 
   isEditorBlur = (event): void => {
     if (
-      (event.target.tagName === 'INPUT' || event.target.tagName === 'LABEL' || event.target.tagName === 'TEXTAREA' || event.target.className === 'DraftEditor-root') &&
+      (event.target.tagName === 'INPUT' || event.target.tagName === 'LABEL' || event.target.tagName === 'TEXTAREA' ) &&
       !this.editorFocused
     ) {
       this.inputFocused = false;
       return true;
     } else if (
-      (event.target.tagName !== 'INPUT' || event.target.tagName !== 'LABEL' || event.target.tagName !== 'TEXTAREA' || event.target.className === 'DraftEditor-root') &&
+      (event.target.tagName !== 'INPUT' || event.target.tagName !== 'LABEL' || event.target.tagName !== 'TEXTAREA' ) &&
       !this.inputFocused
     ) {
       this.editorFocused = false;
